@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(128, 99, 57)">Tabel HTML</h1>
+
+    <table>
+        <caption>Data Siswa</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Nis</th>
+                <th>Program Keahlian</th>
+                <th>Asal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>123456789</td>
+                <td>Teknik Informatika</td>
+                <td rowspan="2">Jakarta</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>987654321</td>
+                <td>Sistem Informasi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Michael Johnson</td>
+                <td>567891234</td>
+                <td>Teknik Elektro</td>
+                <td rowspan="2">Bandung</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sarah Williams</td>
+                <td>345678912</td>
+                <td>Teknik Kimia</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">Total Data</td>
+                <td>4 Data Siswa</td>
+                <td colspan="2" style="text-align: center;">Siswa dari 2 Kota</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
