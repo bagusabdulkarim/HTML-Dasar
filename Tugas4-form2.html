@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Formulir dengan Berbagai Jenis Input</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulir Contoh</h1>
+
+    <form>
+      <table>
+        <tr>
+          <td><label for="nama">Nama:</label></td>
+          <td><input type="text" id="nama" name="nama" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" required /></td>
+        </tr>
+        <tr>
+          <td><label for="checkbox">Checkbox:</label></td>
+          <td>
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="pilihan1" />
+            <label for="checkbox1">Pilihan 1</label>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="pilihan2" />
+            <label for="checkbox2">Pilihan 2</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Jenis Kelamin:</label></td>
+          <td>
+            <input type="radio" id="laki-laki" name="gender" value="Laki-laki" required />
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" required />
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hobi">Pilih hobi Anda:</label></td>
+          <td>
+            <select id="hobi" name="hobi" required>
+              <option value="option1">Browsing</option>
+              <option value="option2">Membaca</option>
+              <option value="option3">Olahraga</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="pesan">Pesan:</label></td>
+          <td><textarea id="pesan" name="pesan" rows="4" cols="30" required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <input type="submit" value="Kirim" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

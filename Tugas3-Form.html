@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Formulir dengan Tag Input</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir dengan Tag Input</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        form {
-            width: 400px;
-            margin: 0 auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="number"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 95%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: #70af85;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        input[type="submit"]:hover {
-            background-color: #559968;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      input[type='number'],
+      input[type='date'],
+      select,
+      textarea {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type='submit'] {
+        background-color: #70af85;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type='submit']:hover {
+        background-color: #559968;
+      }
     </style>
-</head>
-<body>
-    <h1>Contoh Formulir dengan Tag Input</h1>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: rgb(10, 58, 169)">Formulir Pendataan Siswa</h1>
     <form>
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <label for="usia">Usia:</label>
-        <input type="number" id="usia" name="usia" min="15" max="40" step="5" required>
-        <label for="tanggal">Tanggal Lahir:</label>
-        <input type="date" id="tanggal" name="tanggal" required>
-        <p><label for="checkbox">Hobi:</label>
-        Membaca Buku
-        <input type="checkbox" id="checkbox" name="checkbox" value="Ya">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <label for="usia">Usia:</label>
+      <input type="number" id="usia" name="usia" min="15" max="40" step="5" required />
+      <label for="tanggal">Tanggal Lahir:</label>
+      <input type="date" id="tanggal" name="tanggal" required />
+      <p>
+        <label for="checkbox">Hobi:</label>
+        Membaca
+        <input type="checkbox" id="checkbox" name="checkbox" value="Membaca" />
         Menonton
-        <input type="checkbox" id="checkbox" name="checkbox" value="Ya">
+        <input type="checkbox" id="checkbox" name="checkbox" value="Menonton" />
         Berbelanja
-        <input type="checkbox" id="checkbox" name="checkbox" value="Ya">
+        <input type="checkbox" id="checkbox" name="checkbox" value="Berbelanja" />
         Travelling
-        <input type="checkbox" id="checkbox" name="checkbox" value="Ya">
+        <input type="checkbox" id="checkbox" name="checkbox" value="Travelling" />
         Olah Raga
-        <input type="checkbox" id="checkbox" name="checkbox" value="Ya">
-        </p>
-        <p>
+        <input type="checkbox" id="checkbox" name="checkbox" value="Olah Raga" />
+      </p>
+      <p>
         <label for="radio1">Sodara Kandung:</label>
         1
-        <input type="radio" id="radio1" name="radio" value="Opsi 1">
+        <input type="radio" id="radio1" name="radio" value="1" />
         2
-        <input type="radio" id="radio1" name="radio" value="Opsi 1">
+        <input type="radio" id="radio1" name="radio" value="2" />
         3
-        <input type="radio" id="radio1" name="radio" value="Opsi 1">
+        <input type="radio" id="radio1" name="radio" value="3" />
         4
-        <input type="radio" id="radio1" name="radio" value="Opsi 1">
+        <input type="radio" id="radio1" name="radio" value="4" />
         5
-        <input type="radio" id="radio1" name="radio" value="Opsi 1">
-        </p>
-        
-        <label for="pilihan">Pilihan:</label>
-        <select id="pilihan" name="pilihan">
-            <option value="Nilai 1">Nilai 1</option>
-            <option value="Nilai 2">Nilai 2</option>
-            <option value="Nilai 3">Nilai 3</option>
-        </select>
-        <label for="pesan">Pesan:</label>
-        <textarea id="pesan" name="pesan" rows="4" cols="30" required></textarea>
-        <input type="submit" value="Kirim">
+        <input type="radio" id="radio1" name="radio" value="5" />
+      </p>
+
+      <label for="pilihan">Kelas:</label>
+      <select id="pilihan" name="pilihan">
+        <option value="">~~~ Pilih Kelas ~~~</option>
+        <option value="Nilai 1">RPL 1</option>
+        <option value="Nilai 2">RPL 2</option>
+        <option value="Nilai 3">RPL 3</option>
+      </select>
+      <label for="pesan">Kesan dan Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" cols="30" required></textarea>
+      <input type="submit" value="Kirim" />
     </form>
-</body>
+  </body>
 </html>
